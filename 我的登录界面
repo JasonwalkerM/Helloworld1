@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+  .box{
+        width:250px;
+        height:250px;
+        margin:40px 0 0 50px;
+        position:relative;
+        border-radius:5px;
+        background:-webkit-linear-gradient(left top,yellow,green);
+    }
+    #btns{
+        width:250px;
+        position:absolute;
+        left:0px;
+        top:150px;
+    }
+    #text1{
+        display:block;
+        height:30px;
+        width:200px;
+        margin-top:10px;
+        margin-left:25px;
+        border-radius:5px;
+        
+    }
+    #text2{
+        display:block;
+        height:30px;
+        width:200px;
+        margin-top:10px;
+        margin-left:25px;
+        border-radius:5px;
+        
+        
+    }
+    #p1{
+        float:left;
+        margin-left:10px;
+    }
+    #p2{
+        float:right;
+        margin-right:10px;
+    }
+    a{
+        text-decoration:none;
+    }
+    .texts{
+        margin:0 auto;
+        position:absolute;
+        width:250px;
+        height:100px;
+        left:0px;
+        top:10px;
+    }
+    .btn1{
+        background-position:0 0;
+        border:0;
+        margin-left:32px;
+
+    }
+    .btn2{
+        border:0;
+        margin-left:32px;
+        background-position:0 -40px;
+    }
+    .bgi{
+        overflow:hidden;
+        border:0;
+        width:185px;
+        height:34px;
+        background-image:url("http://img.mukewang.com/539a972b00013e9102280177.jpg");
+       opacity:0.4;
+    }
+   .bgi:hover{
+       opacity:1;
+   }
+</style>
+</head>
+<script>
+   /*window.onload=function(){
+        var btns=document.getElementById("btns");
+        var btn=document.getElementsByName("button");
+        //alert("btn.length");
+        //document.write(btn.length)
+        for(var i=0;i<btn.length;i++){
+            btn[i].index=i;
+            bnt[i].onmouseover=function(){
+                btn[this.index].style.opacity="1.0";
+               btn[this.index].stopPropagation="ture";
+                }
+        }
+    } */
+</script>
+<body>
+<div class="box">
+    <div class="texts">
+        <input type="text" placeholder="邮箱/手机号/用户名" id="text1">
+        <input type="text" placeholder="请输入密码" id="text2">
+        <p id="p1">下次自动登陆</p>
+        <p id="p2"><a href="#">忘记密码?</a></p>
+    </div>
+    <div id="btns">
+    <input name="button" type="button" class="btn1 bgi">
+    <hr/>
+    <input name="button" type="button" class="btn2 bgi">
+    </div>
+</div>
+
+</body>
+</html>
